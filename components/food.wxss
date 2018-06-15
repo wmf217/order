@@ -1,0 +1,74 @@
+view,text,navigator{
+  box-sizing: border-box;
+}
+.order-body-right-sec{
+  width: 100%;
+  display: flex;
+  padding: 25rpx 10rpx 23rpx;
+  border-bottom: 1px solid #f5f5f5;
+}
+.order-body-right-sec image{
+  width: 160rpx;
+  border: 2px solid #e7e6e6;
+  height: 160rpx;
+  border-radius: 2px;
+}
+.order-body-right-word{
+  flex: 1;
+  padding-left: 27rpx;
+  padding-top: 14rpx;
+}
+.obrw-name{
+  width: 100%;
+  font-size: 26rpx;
+  line-height: 1;
+  margin-bottom: 16rpx;
+}
+.obrw-detail{
+  width: 100%;
+  font-size: 20rpx;
+  color: #cccccc;
+  line-height: 1;
+}
+.obrw-price{
+  width: 100%;
+  margin-top: 45rpx;
+}
+.obrw-price text{
+  color: #4a86e8;
+  font-size: 30rpx;
+}
+.obrw-price .stepper{
+  float: right;
+}
+.obrw-price .stepper image{
+  width: 35rpx;
+  border: none;
+}
+.obrw-n{
+  float:left;
+  margin-top:-46rpx;
+}
+.obrw-price .stepper input{
+  width: 50rpx;
+  margin-top: 6rpx;
+}
+.obrw-price input{
+  width: 45rpx;
+  float: left;
+  text-align: center;
+  font-size: 26rpx;
+  line-height: 52rpx;
+  margin-top: 5rpx;
+}
+.stepper image{
+  width: 35rpx;
+  border: none;
+}
+.stepper{
+  float: right;
+}
+.stepper input{
+  width: 50rpx !important;
+  margin-top: 12rpx;
+}

@@ -1,0 +1,15 @@
+<view class="order-body-main">
+    <scroll-view scroll-y class="order-body-mleft" style='height:{{scrollheight}}px'>
+    <view  wx:for="{{categorys}}" bindtap="getFood" data-cid="{{item.id}}" data-key="{{index}}" class="order-body-left-sec {{category_key==index?'order-body-left-sec-act':''}}">
+        <text wx:if="{{item.num&&item.num!='0'}}">{{item.num}}</text>
+        {{item.name}}
+    </view>
+    </scroll-view>
+    <scroll-view scroll-y class="order-body-mright" style='height:{{scrollheight}}px'>
+    <food wx:for="{{categorys[category_key].foods}}" detail="{{item}}" num="{{item.num}}" bindchangeNum="changeNum" binddetail="detail"></food>
+    </scroll-view>
+</view>
+<view class="order-bottom">
+    合计：<text>￥{{count}}</text>
+    <view class="order-bottom-btn" bindtap="ok" wx:if="{{count&&count!='0.00'&&count!='0'}}">确定</view>
+</view>

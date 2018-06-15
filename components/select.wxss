@@ -1,0 +1,116 @@
+.order-body-main{
+  width: 100%;
+  display: flex;
+}
+.order-body-mleft{
+  width: 233rpx;
+  display: inline-block;
+  background-color: #f5f5f5;
+  border-top: 2px solid #f5f5f5;
+}
+.order-body-left-sec{
+  width: 100%;
+  background-color: white;
+  border-bottom: 1rpx solid #f5f5f5;
+  height: 81rpx;
+  line-height: 80rpx;
+  text-align: center;
+  position: relative;
+  font-size: 24rpx;
+  border-left: 5rpx solid white;
+}
+.order-body-left-sec-act{
+  border-left: 5rpx solid #643b30;
+  color: #643b30;
+  font-weight: 600;
+  font-size: 26rpx;
+}
+.order-body-left-sec image{
+  position: absolute;
+  top: 30rpx;
+  left: 20rpx;
+  width: 36rpx;
+}
+.order-body-left-sec text{
+  border-radius: 50%;
+  width: 35rpx;
+  height: 35rpx;
+  line-height: 35rpx;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  background-color: #ff9900;
+  top: 10rpx;
+  right: 25rpx;
+  display: inline-block;
+  position: absolute;
+}
+.order-body-left-jf{
+  margin-top: 10rpx;
+}
+.order-body-left-jf image{
+  width: 100%;
+}
+.order-body-mright{
+  flex: 1;
+  border-left: 8rpx solid #f5f5f5;
+  padding: 0 10rpx;
+}
+.order-heng{
+  width: 100%;
+  height: 105rpx;
+}
+.order-bottom{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 102rpx;
+  background-color: #a4c2f4;
+  z-index: 999;
+  overflow: hidden;
+  font-size: 26rpx;
+  color: #643b30;
+  line-height: 100rpx;
+}
+.order-bottom text{
+  font-weight: 600;
+}
+.order-bottom image{
+  width: 35rpx;
+  margin-right: 18rpx;
+  vertical-align: middle;
+}
+.order-bottom .order-bottom-nav{
+  display: inline-block;
+  float: right;
+  height: 100%;
+  width: 254rpx;
+  background-color: #ff9900;
+  color: white;
+  font-size:25rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+.order-bottom navigator{
+  display: inline-block;
+  float: right;
+  height: 100%;
+  width: 254rpx;
+  background-color: #ff9900;
+  color: white;
+  font-size:25rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+.order-bottom-btn {
+  display: inline-block;
+  float: right;
+  height: 100%;
+  width: 254rpx;
+  background-color: #ff9900;
+  color: white;
+  font-size:25rpx;
+  line-height: 100rpx;
+  text-align: center;
+}

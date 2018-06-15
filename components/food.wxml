@@ -1,0 +1,22 @@
+<view  class="order-body-right-sec">
+  <view bindtap="detail" data-id="{{detail.id}}"><image lazy-load='true' src="img/{{detail.img}}"/></view>
+  <view class="order-body-right-word">
+    <view class="obrw-name">{{detail.name}}</view>
+    <view class="obrw-detail">{{detail.brief}}</view>
+    <view class="obrw-price">
+      <text>{{detail.price}}</text>
+      <view class="stepper" wx:if="{{detail.rest_num!=0}}">
+        <!-- 减号 -->  
+        <view class="{{minusStatus}} obrw-n" bindtap="bindMinus" style="{{(num!=0)?'opacity:1':'opacity:0'}}"> <image mode="aspectFit" src="img/addimg2.png"/></view>  
+        <!-- 数值 -->  
+        <input type="number" bindinput="bindManual" value="{{num}}"  style="{{(num!=0)?'opacity:1':'opacity:0'}}" />
+        <!-- 加号 -->  
+        <view class="obrw-n" wx:if="{{num==detail.rest_num}}"> <image mode="aspectFit" src="img/addimg3.png"/></view>
+        <view class="obrw-n" bindtap="bindPlus"  wx:else> <image mode="aspectFit" src="img/addimg.png"/></view>
+      </view>
+      <view class="stepper" style="font-size:10px;color:#dddddd;padding-top:5%;padding-right:10%;" wx:else>  
+         已售完
+      </view> 
+    </view>
+  </view>
+</view>

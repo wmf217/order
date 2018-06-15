@@ -1,0 +1,9 @@
+
+<select
+categorys="{{categorys}}" 
+count="{{count}}" 
+bindgetFood="getFood" 
+bindchangeNum="changeNum" 
+bindok="ok" 
+binddetail="detail">
+</select>
